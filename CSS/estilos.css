@@ -23,3 +23,31 @@ header nav ul li {
     padding:.5em;
     color:#8585c7;
 }
+
+body > main > section > div {
+    display:block;
+    width:100vw;
+    height:100vh;
+    margin:3em 0;
+    border:none;
+}
+
+.section1 {
+    background-color:rgb(245, 0, 0);
+}
+
+.section2 {
+    background-color:rgb(245, 103, 38);
+
+}
+
+.section3 {
+    background-color:rgb(249, 68, 255);
+
+}
+
+footer {
+    display:block;
+    background-color:rgb(214, 129, 1);
+    height:35vh;
+}
