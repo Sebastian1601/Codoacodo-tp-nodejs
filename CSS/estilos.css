@@ -1,0 +1,25 @@
+* {
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+html {
+    background-color:chocolate;
+}
+
+header {
+    display:block;
+    background-color:#000;
+    width:100vw;
+    height:15vh;
+    border:3px solid white;
+}
+
+header nav ul li {
+    display:inline-block;
+    height:2em;
+    width:10em;
+    padding:.5em;
+    color:#8585c7;
+}
