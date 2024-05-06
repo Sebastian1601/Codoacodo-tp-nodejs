@@ -4,11 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--google  fonts link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <!--font awesome link -->
+    <script src="https://kit.fontawesome.com/c1af2d25a3.js" crossorigin="anonymous"></script>
+
+    <!-- Hoja de estilos CSS link -->
     <link rel="stylesheet" href="./CSS/estilos.css">
-    <title>Inicio página Cochera's</title>
+    <title>Home Garage's hub</title>
 </head>
 
 <body>
@@ -20,26 +26,41 @@
     </header>
     <nav>
         <ul class="nav__ul">
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#buscar">Buscar</a></li>
-            <li><a href="#unirse">Unirse</a></li>
-            <li><a href="#aboutus">Sobre nosotros</a></li>
-            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#nav"><i class="fa-solid fa-house"></i>Inicio</a></li>
+            <li><a href="./form.html"><i class="fa-solid fa-user"></i>Log in</a></li>
+            <li><a href="#unirse"><i class="fa-solid fa-handshake"></i>Unirse</a></li>
+            <li><a href="#aboutus"><i class="fa-solid fa-users-viewfinder"></i>Nosotros</a></li>
+            <li><a href="./contact-form.html"><i class="fa-solid fa-at"></i>Contacto</a></li>
         </ul>
     </nav>
 
 
     <main>
-        <section id="buscar">
-            <div class="flex_container">
-                <div class="flex_item">1</div>
+
+        <!--section-->
+        <section id="inicio">
+            <div class="seccion1__img-container">
+                <span class="mask__div">
+                    <img src="./Media/img/img_frontal_auto_luz.jpg"
+                        alt="Imagen de la luz frontal de un vehículo deportivo de lujo">
+                </span>
+                <span class="inicio__span-img bebas-neue">
+                    Tu lugar para ubicar estacionamiento de manera rápida y eficiente
+                </span>
             </div>
         </section>
 
+        <!--section-->
         <section id="unirse">
-            <div class="seccion2__contenedor">
-                <h2>Querés prestar tus servicios a través de nuestra página?</h2>
-                <p>Accedé para brindarnos tus datos, y unirte a la red de estacionamientos más grande ♥</p>
+            <div class="seccion2__flex-form">
+                <div class="flex-container">
+                 <h2>Querés prestar tus servicios a través de nuestra página?</h2>
+                 <p>Accedé para brindarnos tus datos, y unirte a la red de estacionamientos más grande ♥</p>
+                 <quote>formulario de prestador nuevo</quote>
+                 <br>
+                 <input type="reset" value="Reset datos">
+                 <input type="button" value="Enviar datos">
+                </div>
             </div>
         </section>
 
@@ -50,6 +71,40 @@
     </main>
 
     <footer id="aboutus">
+        <div class="footer__flex-container">
+            <div class="footer__flex-card footer_1era">
+                <p>David Sebastián Giordano <br>
+                    Codo a Codo 2024 <br>
+                    <a href="mailto:sebastiangiordano@gmail.com">Sebastiangiordano@gmail.com</a>
+                </p>
+
+            </div>
+            <div class="footer__flex-card footer_2era">
+                <p>Hernan Machado <br>
+                    Codo a Codo 2024 <br>
+                    <a href="mailto:hernan556@gmail.com">hernan556@gmail.com</a>
+                </p>
+            </div>
+            <div class="footer__flex-card footer_3era">
+                <p>Christian Noguera <br>
+                    Codo a Codo 2024 <br>
+                    <a href="mailto:christian0484@gmail.com">christian0484@gmail.com</a>
+                </p>
+
+
+            </div>
+            <div class="footer__flex-card footer_4era">
+                <p> Diseño web <br>
+                    Proyecto Codo a codo <br>
+                    Nodejs <br>
+                    Lenguajes <br>
+                    HTML <br>
+                    CSS <br>
+                    JavaScript
+            </div>
+        </div>
+
+        </div>
 
     </footer>
 </body>
