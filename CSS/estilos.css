@@ -1,8 +1,8 @@
 :root {
-    --f1golden: #F5CA78;
-    --f1red: #F5050C;
-    --f1orange: #F55F11;
-    --f1peach: #F59A38;
+    --fondouno: #6d6c86;
+    --fondodos: #4d4c6a;
+    --fondooscuro: #1c1b44;
+    --bordes: #4f4e98;
     --f1cream: #F5B695;
     --f1watermelon: #F55E40;
 }
@@ -11,111 +11,127 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+.bebas-neue {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 /* ------ DEFINICION DEL HEADER Y NAV ------- */
 
 header {
     display: block;
-    background-color: #000;
-    width: 100vw;
+    background-color: var(--fondouno);
+    width: 100%;
     height: 15vh;
 }
 
-.nav__ul {
-    display:flex;
-    justify-content:right;
-    align-items:center;
-    width:100%;
-    background-color:white;
-}
-
-header nav ul li {
+.logo__fondo {
+    /*esto define el área del logo, para poder ubicar el logo y el texto*/
+    position: relative;
     display: inline-block;
-    width:10em;
-    height:2em;
-    padding: .4em;
-    color: #000000;
-    background-color:var(--f1red);
+    width: 500px;
+    height: 15vh;
+    background-color: rgb(90, 52, 107);
 }
 
-header nav div.nav__ul a {
-    font-size:1.4em;
-    text-decoration:none;
-    text-align:center;
+.logo__prin {
+    /*esto define el área donde va a ir el logo */
+    display: inline-block;
+    width: 8.5em;
+    height: 8.5em;
+    border-radius: 50%;
+    background-color: #F55E40;
 }
+
+.logo__fondo>h1 {
+    /* texto sobre el logo */
+    position: absolute;
+    display: inline-block;
+    left: 35px;
+    bottom: 10px;
+    font-size: 35px;
+    text-shadow: 0 0 10px white, 0 0 5px white;
+
+}
+
+/*definicion del contenedor flex para el menu nav */
+.nav__ul {
+    display: flex;
+    flex: row wrap;
+    width: 100%;
+    height: 80px;
+    justify-content: right;
+    padding:0 100px;
+
+}
+
+/*esto se puede BORRAR, es solamente para ubicar las etiquetas <li> en el nav*/
+.nav__ul>li {
+    height:100%;
+    border:1px solid white;
+    align-content:center;
+}
+
+
+/*definimos el cambio de los botones del nav*/
+ul.nav__ul li > a {
+    display: inline-block;
+    background-color: #0f0d52;
+    height: 3em;
+    width: 10em;
+    border: 1px solid rgb(94, 9, 173);
+    padding-top: .8em;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 10px;
+    border-radius: 35px;
+}
+
+a:link {
+    color: rgb(255, 255, 255);
+
+}
+
+a:visited {
+    color: rgb(245, 245, 245);
+}
+
+
+ul.nav__ul li > a:hover {
+    color:#ffb617;
+    background-color:#181561;
+    border:2px solid #fff;
+}
+
 
 /* ------- DEFINICION DEL BODY ----------------- */
 
 body {
-    background-image: url(../Media/img/img_esta_vacio.webp);
-    background-color: rgb(35, 35, 80);
-    background-position: fixed;
+    background-color:var(--fondooscuro);
 }
 
+/*se define los bloques principales en tamaño y color de fondo */
 section {
-    display:flex;
-    flex-flow:row wrap;
-    justify-content:space-around;
-    padding:5em;
-    width:100vw;
-    height:150vh;
-    margin:2em 0;
-    border-top:2px solid white;
-    border-bottom:2px solid white;
-    background-color:#ffffff63;
+    display:block;
+    max-width: 100vw;
+    height: 150vh;
+    margin: 2em 0;
+    border-top: 1px solid #fdbb00;
+    border-bottom: 1px solid #fdbb00;
+    background-image: linear-gradient(315deg ,var(--fondooscuro), var(--fondodos));
 }
 
-.seccion1__div-1 {
-    display:inline-block;
-    position:relative;
-    float:left;
-    min-width:400px;
-    width:500px;
-    height:70vh;
-    border-radius:30px;
-    background-color:var(--f1peach);
-    border: 1px solid var(--f1red);
-    box-shadow:5px 5px 10px #111;
-}
 
-.seccion1__div-2 {
-    display:inline-block;
-    position:relative;
-    float:left;
-    min-width:400px;
-    width:500px;
-    height:70vh;
-    border-radius:30px;
+.seccion2__contenedor {
     background-color:var(--f1orange);
-    border:1px solid var(--f1red);
-    box-shadow:5px 5px 10px #111;
-}
-
-.seccion1__div-3 {
-    display:inline-block;
-    position:relative;
-    float:left;
-    min-width:400px;
-    width:500px;
-    height:70vh;
-    border-radius:30px;
-    background-color:var(--f1watermelon);
-    border:1px solid var(--f1red);
-    box-shadow:5px 5px 10px #111;
-}
-
-.section2 {
-    /*
-    background-color:var(--f1orange);*/
     border-top: 5px solid var(--f1red);
 }
 
-.section3 {
-    /*
-    background-color:var(--f1watermelon);*/
-    border-top: 5px solid var(--f1red);
-}
 
 
 /* --------------------- FOOTER ----------------------*/
@@ -123,4 +139,49 @@ footer {
     display: block;
     background-color: var(--f1cream);
     height: 35vh;
+}
+
+/* ------------------TAGS TEMPORALES -------------------------*/
+
+#buscar::after {
+    content:"SECCION 1";
+    font-size:250px;
+    color:#fff;
+}
+
+#unirse::after {
+    content:"SECCION 2";
+    font-size:250px;
+    color: #fff;
+}
+
+#contacto::after {
+    content:"SECCION 3";
+    font-size:250px;
+    color: #fff;
+}
+
+footer::after {
+    content:"FOOTER";
+    font-size:250px;
+    color:#fff;
+
+}
+
+/*-------------------pruebas----------------------*/
+
+.flex_container {
+    display:flex;
+    justify-content:space-evenly;
+    height:50vh;
+    background-color:white;
+    align-items:flex-start;
+}
+
+.flex_item {
+    display:inline-block;
+    min-width:100px;
+    background-color:yellowgreen;
+    margin:auto;
+
 }
