@@ -190,6 +190,22 @@ section div span img {
 
 }
 
+/* --------------------SECCION 3 --------------------*/
+
+div.seccion3__mapa {
+    margin-top:100px;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-content:center;
+    height:80%;
+}
+
+.seccion3__mapa-iframe {
+    height:100%;
+    border-radius:25px;
+}
+
 
 
 
