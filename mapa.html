@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--google  fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <!-- conecto el archivo mapa_datos.js para poder manejar los datos -->
+    <script src="./JS/mapa_datos.js"></script>
+
+
+    <!--   
+      conectamos la api de google maps con la página
+ -->
+    <script>
+        (g => { var h, a, k, p = "The Google Maps JavaScript API", c = "google", l = "importLibrary", q = "__ib__", m = document, b = window; b = b[c] || (b[c] = {}); var d = b.maps || (b.maps = {}), r = new Set, e = new URLSearchParams, u = () => h || (h = new Promise(async (f, n) => { await (a = m.createElement("script")); e.set("libraries", [...r] + ""); for (k in g) e.set(k.replace(/[A-Z]/g, t => "_" + t[0].toLowerCase()), g[k]); e.set("callback", c + ".maps." + q); a.src = `https://maps.${c}apis.com/maps/api/js?` + e; d[q] = f; a.onerror = () => h = n(Error(p + " could not load.")); a.nonce = m.querySelector("script[nonce]")?.nonce || ""; m.head.append(a) })); d[l] ? console.warn(p + " only loads once. Ignoring:", g) : d[l] = (f, ...n) => r.add(f) && u().then(() => d[l](f, ...n)) })({
+            key: "AIzaSyCfjDu6s7dos2B8zoWoJKfGGhvg-6-9C_M",
+        });
+    </script>
+
+    <script src="./JS/mapa.js"></script>
+
+
+    <!--font awesome link -->
+    <script src="https://kit.fontawesome.com/c1af2d25a3.js" crossorigin="anonymous"></script>
+
+    <!-- Hoja de estilos CSS link -->
+    <link rel="stylesheet" href="./CSS/estilos.css">
+
+    <!--     Hoja de estilos especial del mapa -->
+    <link rel="stylesheet" href="./CSS/mapa.css">
+
+    <title>Mapa:Garage's hub</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo__fondo">
+            <span class="logo__prin"></span>
+            <h1 class="bebas-neue">Garage's hub</h1>
+        </div>
+    </header>
+    <nav>
+        <ul class="nav__ul">
+            <li><a href="#nav"><i class="fa-solid fa-house"></i>Inicio</a></li>
+            <li><a href="./form.html"><i class="fa-solid fa-user"></i>Log in</a></li>
+            <li><a href="#unirse"><i class="fa-solid fa-handshake"></i>Unirse</a></li>
+            <li><a href="#aboutus"><i class="fa-solid fa-users-viewfinder"></i>Nosotros</a></li>
+            <li><a href="./contact-form.html"><i class="fa-solid fa-at"></i>Contacto</a></li>
+        </ul>
+    </nav>
+
+
+    <main>
+        <section class="mapa__container">
+            <div class="listaEstacionamientos__main">
+                <h3>Lista de estacionamientos cercanos</h3>
+                <div class="estaNombres__main" id="estaNombres">
+
+                </div>
+            </div>
+            <div id="mapa__main"></div>
+        </section>
+
+
+    </main>
+
+
+</body>
+
+</html>
