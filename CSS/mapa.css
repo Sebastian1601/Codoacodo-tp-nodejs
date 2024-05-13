@@ -11,6 +11,7 @@
 }
 
 .mapa__container {
+    position:relative;
     display:flex;
     min-width:90vw;
     min-height:90vh;
@@ -18,23 +19,35 @@
 }
 
 .listaEstacionamientos__main {
+    position:absolute;
+    top:10vh;
+    left:2vw;
     display:flex;
     flex-direction:column;
-    width:20vw;
-    height:100vh;
+    justify-content:flex-start;
+    align-items:left;
+    padding:1em;
+    width:fit-content;
+    height:80vh;
     border:1px solid #000;
+    border-radius:15px;
     z-index:500;
-    background-color:teal;
-    word-wrap:break-word;
+    background-color:rgba(0, 128, 128, 0.589);
     text-transform:uppercase;
     font-weight:bold;
     color:#fff;
+    text-shadow:0 0 2px #000, 0 0 2px #000;
+
 }
 
-.estaNombres__main {
-    width:fit-content;
-    height:100%;
-    word-wrap:wrap;
-    background-color:slategray;
+.mapa__lista-titulo {
+    border-bottom:2px double #fff;
+    margin-bottom:1em;
+}
+
+#estaNombres {
+    text-transform:uppercase;
+    font-weight:bold;
     color:#fff;
+    text-shadow:0 0 2px #000, 0 0 2px #000;
 }
