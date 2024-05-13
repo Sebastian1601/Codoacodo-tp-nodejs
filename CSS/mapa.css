@@ -28,5 +28,13 @@
     word-wrap:break-word;
     text-transform:uppercase;
     font-weight:bold;
+    color:#fff;
 }
 
+.estaNombres__main {
+    width:fit-content;
+    height:100%;
+    word-wrap:wrap;
+    background-color:slategray;
+    color:#fff;
+}
