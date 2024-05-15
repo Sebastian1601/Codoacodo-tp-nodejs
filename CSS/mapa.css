@@ -5,9 +5,9 @@
 }
 
 #mapa__main {
-    width:100vw;
+    position:relative;
+    width:100Vw;
     height:100vh;
-    border:1px solid tomato;
 }
 
 .mapa__container {
@@ -22,7 +22,7 @@
     position:absolute;
     top:10vh;
     left:2vw;
-    display:flex;
+    display:block;
     flex-direction:column;
     justify-content:flex-start;
     align-items:left;
@@ -32,11 +32,11 @@
     border:1px solid #000;
     border-radius:15px;
     z-index:500;
-    background-color:rgba(0, 128, 128, 0.589);
+    background-color:rgba(255, 255, 255, 0.589);
     text-transform:uppercase;
     font-weight:bold;
-    color:#fff;
-    text-shadow:0 0 2px #000, 0 0 2px #000;
+    color:#475d97;
+    text-shadow:0 0 2px #ffffff, 0 0 2px #ffffff;
 
 }
 
@@ -48,6 +48,6 @@
 #estaNombres {
     text-transform:uppercase;
     font-weight:bold;
-    color:#fff;
-    text-shadow:0 0 2px #000, 0 0 2px #000;
+    color:#3c406b;
+    text-shadow:0 0 2px #ffffff, 0 0 2px #ffffff;
 }
