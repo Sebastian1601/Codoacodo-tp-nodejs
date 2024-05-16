@@ -10,13 +10,20 @@ let iconMarker = L.icon({
 })
 var popUp = L.popup();
 
-const escuchaClickLista = () => {
+ const escuchaClickLista = () => {
     document.querySelectorAll(".esta_nombres").forEach((nombre_esta,indice) =>{
         nombre_esta.addEventListener("click", ()=>{
             marcadores[indice].openPopup();
         })
     })
-}
+} 
+
+/* const escuchaClick = () => {
+    const lista = document.getElementsByClassName('esta_nombres');
+    lista.addEventListener("click", (event)=> {
+    console.log(lista.e.target);
+
+})} */
 
 function mostrarPopUp(evento){
     popUp
