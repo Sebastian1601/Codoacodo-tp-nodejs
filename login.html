@@ -38,7 +38,7 @@
     <main>
         <div class="form__container">
             <div class="usuario__form">
-                <form action="" onsubmit="prevenirCarga()" id="formularioUser">
+                <form action="" id="formularioUser" method="POST">
                     <h1>Login de usuario</h1>
                     <div class="form__input">
                         <div class="form__input-box">
@@ -54,7 +54,7 @@
                         <label for="recordar"><input type="checkbox" id="recordar">Recordar mis datos</label>
                         <a href="#">Olvide mi contraseña T_T</a>
                     </div>
-                    <button type="submit" class="btn__enviar">Acceder</button>
+                    <button type="submit" class="btn__enviar">Loguearse</button>
                     <div class="form__registro">
                         <p>No tienes una cuenta, <a href="#">regístrate</a></p>
                     </div>
@@ -64,7 +64,7 @@
                 </form>
             </div>
             <div class="dueno__form">
-                <form action="" onsubmit="prevenirCarga()" id="formularioUser">
+                <form action="" id="formularioPres" method="POST">
                     <h1>Login de Prestador</h1>
                     <div class="form__input">
                         <div class="form__input-box">
@@ -97,7 +97,7 @@
 
         </div>
     </main>
-    <script src="./js/login.js">
+    <script src="./js/login.js" type="module">
     </script>
 
 </body>
